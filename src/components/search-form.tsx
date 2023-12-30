@@ -21,7 +21,7 @@ export default function SearchForm() {
       return null
     }
 
-    router.push(`/search?=${query}`)
+    router.push(`/search?q=${query}`)
   }
 
   return (
