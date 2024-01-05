@@ -1,4 +1,4 @@
-import Header from '@/components/header'
+import { Header } from '@/components/header'
 import { CartProvider } from '@/context/cart-context'
 import { ReactNode } from 'react'
 

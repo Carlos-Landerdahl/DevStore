@@ -27,7 +27,7 @@ export default async function Search({ searchParams }: SearchProps) {
   const { q: query } = searchParams
 
   if (!query) {
-    // redirect('/')
+    redirect('/')
   }
 
   const products = await searchProducts(query)

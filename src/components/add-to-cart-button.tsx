@@ -6,7 +6,7 @@ export interface AddToCartButtonProps {
   productId: number
 }
 
-export default function AddToCartButton({ productId }: AddToCartButtonProps) {
+export function AddToCartButton({ productId }: AddToCartButtonProps) {
   const { addToCart } = useCart()
 
   function handleAddProductToCart() {
@@ -15,11 +15,11 @@ export default function AddToCartButton({ productId }: AddToCartButtonProps) {
 
   return (
     <button
-      onClick={handleAddProductToCart}
       type="button"
+      onClick={handleAddProductToCart}
       className="mt-8 flex h-12 items-center justify-center rounded-full bg-emerald-600 font-semibold text-white"
     >
-      Adicionar ao carrinhos
+      Adicionar ao carrinho
     </button>
   )
 }
